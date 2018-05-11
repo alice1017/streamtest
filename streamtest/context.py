@@ -56,11 +56,15 @@ class _StreamContext(object):
 
     def __eq__(self, other):
 
-        return (self.output == other)
+        if isinstance(other, _StreamContext):
+            return (self.output == other.output)
+
+        else:
+            return (self.output == other)
 
     def __ne__(self, other):
 
-        return (self.output != other)
+        return not self.__eq__(other)
 
     def __repr__(self):
 
