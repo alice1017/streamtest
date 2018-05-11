@@ -17,5 +17,12 @@ setup(
                 "standard stream(stdout, stderr)",
     version=__version__,
     license=__license__,
-    packages=find_packages()
+    packages=find_packages(),
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 2.7",
+        "Topic :: Software Development :: Testing :: Unit",
+    ]
 )
