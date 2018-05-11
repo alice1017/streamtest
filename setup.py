@@ -9,12 +9,16 @@ from streamtest import (
     __license__
 )
 
+with open("README.rst", "r") as fp:
+    readme = fp.read()
+
 setup(
     name="streamtest",
     author=__author__,
     author_email=__author_email__,
     description="Python unittest.TestCase for testing the output of "
                 "standard stream(stdout, stderr)",
+    long_description=readme,
     version=__version__,
     license=__license__,
     url="https://github.com/alice1017/streamtest",
