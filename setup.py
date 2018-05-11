@@ -17,6 +17,7 @@ setup(
                 "standard stream(stdout, stderr)",
     version=__version__,
     license=__license__,
+    url="https://github.com/alice1017/streamtest",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
